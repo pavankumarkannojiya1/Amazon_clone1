@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <title>Food Delivery</title>
+</head>
+<body>
+    <header>
+        <h1>Food Delivery</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="food-item">
+                <h3>Burger</h3>
+                <p>Delicious burger with all the toppings.</p>
+                <p>Price: $5.99</p>
+                <button class="add-to-cart" data-item="Burger" data-price="5.99">Add to Cart</button>
+            </div>
+            <!-- Add more food items here -->
+        </section>
+        <section class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="place-order">Place Order</button>
+        </section>
+    </main>
+    <script src="food.js"></script>
+</body>
+</html>
